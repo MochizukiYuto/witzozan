@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 0;
+  margin-left: 70px;
+}
+
+.title {
+  font-family: sans-serif;
+  font-size: 40px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 0px;
+}
+
+.headline {
+  border-top: 3px solid gray;
+  border-left: 10px solid gray;
+  font-size: xx-large;
+}
