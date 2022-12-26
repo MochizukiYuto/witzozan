@@ -2,16 +2,45 @@
 
 body {
   margin: 0px;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
 main {
-  margin: 0;
+  margin-right: 70px;
   margin-left: 70px;
 }
 
+h1 {
+  text-align: center;
+  font-size: 90px;
+}
+
 .title {
+  margin-left: 70px;
   font-family: sans-serif;
-  font-size: 40px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.picture {
+  margin: 500px 0px 380px 0px;
+  animation-name: fadeinanimation;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeinanimation {
+  from {
+    opacity: 0%;
+  } to {
+    opacity: 100%;
+  }
+}
+
+article {
+  border: 3px solid gray;
+  padding: 0px 1em 1em 1em;
 }
 
 footer {
@@ -24,8 +53,6 @@ footer {
   margin-left: 0px;
 }
 
-.headline {
-  border-top: 3px solid gray;
-  border-left: 10px solid gray;
-  font-size: xx-large;
+article {
+  text-align: justify;
 }
