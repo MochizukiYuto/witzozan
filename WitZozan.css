@@ -38,6 +38,10 @@ h1 {
   }
 }
 
+ul {
+  list-style: none;
+}
+
 article {
   border: 3px solid gray;
   padding: 0px 1em 1em 1em;
