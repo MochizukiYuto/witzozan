@@ -10,11 +10,89 @@ main {
   margin-right: 70px;
   margin-left: 70px;
 }
+/*ボタンクリック前*/
+.nav_toggle {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: 50px;
+  z-index: 999;
+}
+.nav_toggle i {
+  position: fixed;
+  width: 100px;
+  height: 5px;
+  background-color: black;
+  transition: transform .2s, opacity .2s;
+  z-index: 999;
+}
+.nav_toggle i:nth-child(1) {
+  margin-top: 10px;
+}
+.nav_toggle i:nth-child(2) {
+  margin-top: 50px;
+}
+.nav_toggle i:nth-child(3) {
+  margin-top: 90px;
+}
+/*ボタンクリック後*/
+.nav_toggle.show {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 50px;
+  right: 50px;
+  z-index: 999;
+}
+.nav_toggle.show i {
+  position: fixed;
+  width: 100px;
+  height: 5px;
+  background-color: black;
+  transition: transform .2s, opacity .2s;
+  z-index: 999;
+}
+.nav_toggle.show i:nth-child(1) {
+  transform: translateY(40px) rotate(-45deg);
+}
+.nav_toggle.show i:nth-child(2) {
+  opacity: 0;
+}
+.nav_toggle.show i:nth-child(3) {
+  transform: translateY(-40px) rotate(45deg);
+}
+/*メニューリストのcss、クリック前*/
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s, visibility .5s;
+  text-align: center;
+}
+/*メニューリストのcss、クリック後*/
+.nav.show {
+  opacity: 1;
+  visibility: visible;
+  background-color: orange;
+  z-index: 998;
+  margin-top: 0%;
+  text-align: center;
+  vertical-align:middle;
+  font-size: 6em;
+}
+
 
 h1 {
   text-align: center;
   font-size: 90px;
   font-family: sans-serif;
+  color: orange;
 }
 
 .title {
@@ -25,7 +103,7 @@ h1 {
 }
 
 .picture {
-  margin: 500px 0px 380px 0px;
+  margin: 500px 0px 650px 0px;
   animation-name: fadeinanimation;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -60,4 +138,14 @@ footer {
 
 article {
   text-align: justify;
+}
+
+header section {
+  margin-bottom: 400px;
+}
+
+main section {
+  padding-bottom: 100px;
+  border-bottom: 1px solid orange;
+  margin-bottom: 100px;
 }
